@@ -7,6 +7,12 @@
     justify-content: center;
     display:flex;
     margin-top:48px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
 }
 
 .popup__save:hover{
@@ -17,5 +23,7 @@
     .popup__save{
     min-width: 238px;
     margin-top:45px;
+    font-size: 14px;
+    line-height: 17px;
     }
 }
