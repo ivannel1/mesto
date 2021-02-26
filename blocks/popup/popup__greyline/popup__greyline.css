@@ -1,0 +1,9 @@
+.popup__greyline{
+    max-width: 356px;
+    max-height: 0px;
+    margin:0;
+    color:#000000;
+    opacity: 0.2;
+    margin-top:13px;
+    margin-bottom:30px;
+}

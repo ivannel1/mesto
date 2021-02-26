@@ -1,0 +1,8 @@
+.element__header{
+    color:black;
+    max-width: 246px;
+    margin:0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
