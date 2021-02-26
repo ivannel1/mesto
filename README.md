@@ -4,6 +4,4 @@
 
 При создании проекта были использованы: HTML, CSS, Javascript
 
-Проект доступен по ссылке: https://ivannel1.github.io/mesto/
-
 Ссылка на проект: https://ivannel1.github.io/mesto/
