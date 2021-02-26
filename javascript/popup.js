@@ -4,11 +4,11 @@ let popupSave = document.querySelector(".popup__save");
 let popup = document.querySelector(".popup");
 
 function openPopup(){
-    popup.classList.add("popup__opened");
+    popup.classList.add("popup_opened");
 }
 
 function closePopup(){
-    popup.classList.remove("popup__opened");
+    popup.classList.remove("popup_opened");
 }
 
 // Находим форму в DOM
