@@ -16,10 +16,10 @@
 
 @media screen and (max-width:320px){
     .profile__add-button{
-        align-self: center;
-        margin:auto;
+
         width: 282px;
         padding-top:50px;
         margin-bottom: 36px;
+        margin-left:19px;
     }
 }
