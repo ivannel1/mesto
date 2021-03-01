@@ -1,6 +1,8 @@
 .profile-info__about{
     height:18px;
+    font-family: Inter;
     font-weight: normal;
+    font-style: normal;
     font-size: 18px;
     line-height: 22px;
 }
