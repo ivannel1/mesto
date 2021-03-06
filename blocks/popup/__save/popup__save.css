@@ -7,13 +7,14 @@
     justify-content: center;
     display:flex;
     margin-top:48px;
-    font-family: Inter;
+    font-family: 'Inter', ‘Arial’, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    outline:none;
+    border-radius:2px;
+    padding: 0;
 }
 
 .popup__save:hover{

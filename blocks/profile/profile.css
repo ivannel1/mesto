@@ -4,9 +4,11 @@
     display:flex;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1060px){
     .profile{
-        margin:auto;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

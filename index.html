@@ -9,21 +9,22 @@
 
 <body class="page">
     <header class="header">
-        <div class="header__logo"></div>
-        <div class="header__line"></div>
+        <img class="header__logo" alt="логотип сайта" src="../mesto/images/mesto__logo.svg">
     </header>
 
     <main class="main-content">
         <section class="profile">
                 <img src="images/avatar.png" alt="аватар пользователя" class="profile__avatar">
                 <div class="profile-info">
-                    <div class="profile-info__content">
-                        <h1 class="profile-info__name">Жак-Ив Кусто</h1>
-                        <h2 class="profile-info__about">Исследователь океана</h2>
-                    </div>
-                    <a class="profile-info__edit-button"></a>
+                    <h1 class="profile-info__name">Жак-Ив Кусто</h1>
+                    <button type='button' class="profile-info__edit-button" aria-label="кнопка редактирования профиля">
+                        <img class="profile-info__edit-button-icon" src="images/edit.svg">
+                    </button>
+                    <p class="profile-info__about">Исследователь океана</p>
                 </div>
-                <div class="profile__add-button"></div>
+                <button type='button'class="profile__add-button">
+                    <img class="profile__add-button-cross"src="../mesto/images/Vector.svg">
+                </button>
         </section>
 
         <section class="elements">
@@ -31,7 +32,7 @@
                 <img src="images/karachevsk.png" class="element__image" alt="церковь в Карачевске">
                 <div class="element__bottom">
                     <h3 class="element__header">Карачаевск</h3>
-                    <img src="../mesto/images/heart.svg" class="element__like" alt="лайк">
+                    <button type="button" class="element__like"></button>
                 </div>
             </div>
 
@@ -39,7 +40,7 @@
                 <img src="images/elbrus.png" class="element__image" alt="закат у Эльбруса">
                 <div class="element__bottom">
                     <h3 class="element__header">Гора Эльбрус</h3>
-                    <img src="../mesto/images/heart.svg" class="element__like" alt="лайк">
+                    <button type="button" class="element__like"></button>
                 </div>
             </div>
 
@@ -47,7 +48,7 @@
                 <img src="images/dombay.png" class="element__image" alt="хребет Домбай">
                 <div class="element__bottom">
                     <h3 class="element__header">Домбай</h3>
-                    <img src="../mesto/images/heart.svg" class="element__like" alt="лайк">
+                    <button type="button" class="element__like"></button>
                 </div>
             </div>
 
@@ -55,7 +56,7 @@
                 <img src="images/elbrus.png" class="element__image" alt="закат у Эльбруса">
                 <div class="element__bottom">
                     <h3 class="element__header">Гора Эльбрус</h3>
-                    <img src="../mesto/images/heart.svg" class="element__like" alt="лайк">
+                    <button type="button" class="element__like"></button>
                 </div>
             </div>
 
@@ -63,7 +64,7 @@
                 <img src="images/dombay.png" class="element__image" alt="хребет Домбай">
                 <div class="element__bottom">
                     <h3 class="element__header">Домбай</h3>
-                    <img src="../mesto/images/heart.svg" class="element__like" alt="лайк">
+                    <button type="button" class="element__like"></button>
                 </div>
             </div>
 
@@ -71,7 +72,7 @@
                 <img src="images/karachevsk.png" class="element__image" alt="церковь в Карачевске">
                 <div class="element__bottom">
                     <h3 class="element__header">Карачаево-Черкессия</h3>
-                    <img src="../mesto/images/heart.svg" class="element__like" alt="лайк">
+                    <button type="button" class="element__like"></button>
                 </div>
             </div>
         </section>
@@ -84,18 +85,16 @@
     <div class="popup">
         <div class="popup__container">
             <div class="popup__content">
-                <h4 class="popup__title">Редактировать&nbsp;профиль</h4>
-                <form class="popup__form">
-                    <input type="text" value="Жак-Ив Кусто" class="popup__name">
-                    <div class="popup__greyline"></div> 
-                    <input type="text" value="Исследователь океана" class="popup__about">
-                    <div class="popup__greyline"></div>
-                    <input type="submit" value="Сохранить" class="popup__save">
+                <h2 class="popup__title">Редактировать&nbsp;профиль</h2>
+                <form name="popup" class="popup__form">
+                    <input name="input name" id="name" type="text" value="" class="popup__input popup__name">
+                    <input name="input about" id="about" type="text" value="" class="popup__input popup__about">
+                    <button type="submit"class="popup__save">Сохранить</button>
                 </form>
-            <a class="popup__close-icon popup__close"><img class="popup__cross" alt="Закрыть" src="../mesto/images/Vector2.png"></a>
+            <button type="button" class="popup__close"></button>
             </div>
         </div>
     </div>
-    <script src="../mesto/javascript/popup.js"></script>
+    <script src="./javascript/popup.js"></script>
 </body>
 </html>

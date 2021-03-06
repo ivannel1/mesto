@@ -2,6 +2,13 @@
 height:18px;
 width: 20.7px;
 margin-top:6px;
+background-image: url(../../../images/heart.svg);
+background-color: transparent;
+padding: 0;
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+border: none;
 }
 
 .element__like:hover{

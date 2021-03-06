@@ -1,13 +1,11 @@
 .header__logo{ 
-    background-image: url(../../../images/mesto__logo.png);
     max-width: 142px;
-    min-height: 33.4px;
-    background-size: cover;
-    margin:auto auto 40.6px 2.88px;
+    max-height: 33px;
 }
 
 @media screen and (max-width:320px){
     .header__logo{
-        margin:0 auto 20.6px 27px;
+        max-width: 103.74px;
+        min-height: 24.4px;
     }
 }
