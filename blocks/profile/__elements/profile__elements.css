@@ -1,4 +1,4 @@
-.profile-info{
+.profile__elements{
     color:white;
     display:grid;
     grid-template-columns: min-content min-content;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width:320px){
-    .profile-info{
+    .profile__elements{
         grid-template-columns: 189px 18px;
         column-gap: 10px;
         row-gap: 14px;

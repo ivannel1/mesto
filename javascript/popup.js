@@ -1,18 +1,21 @@
-let popupOpen = document.querySelector(".profile-info__edit-button");
+let popupOpen = document.querySelector(".profile__edit-button");
 let popupClose = document.querySelector(".popup__close");
 
-let profileName = document.querySelector(".profile-info__name");
-let profileAbout = document.querySelector(".profile-info__about");
+let profileName = document.querySelector(".profile__name");
+let profileAbout = document.querySelector(".profile__about");
+
+let popupName = document.getElementById("name");
+let popupAbout = document.getElementById("about");
 
 let popup = document.querySelector(".popup");
-let formElement = document.querySelector(".popup__form") 
-let nameInput = document.querySelector(".popup__name") 
-let jobInput = document.querySelector(".popup__about")
+let formElement = document.querySelector(".popup__form");
 
 function openPopup(){
     popup.classList.add("popup_opened");
+    popupName.value = profileName.textContent;
+    popupAbout.value = profileAbout.textContent;
 }
-// Какие данные должна заносить данная функция?В задании ничего про это на написано
+// Эта ссылка ведет на сайт доступный только для ревьюверов,у студентов ничего об этом не сказано
 
 function closePopup(){
     popup.classList.remove("popup_opened");
@@ -20,14 +23,10 @@ function closePopup(){
 
 function formSubmitHandler (evt) {
     evt.preventDefault(); 
-    
-    let nameValue = document.querySelector(".popup__name").value;
-    let aboutValue = document.querySelector(".popup__about").value;
-    // Если запрашивать значение переменных заранее,код выдает ошибку,подскажи пожалуйста,как её избежать
 
-    
-    profileName.textContent = nameValue;
-    profileAbout.textContent = aboutValue;
+    profileName.textContent = popupName.value;
+    profileAbout.textContent = popupAbout.value;
+
     closePopup();
 }
 formElement.addEventListener('submit', formSubmitHandler);
